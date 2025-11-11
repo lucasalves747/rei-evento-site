@@ -1,28 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Award, BookOpen, Users, TrendingUp } from "lucide-react";
 
-const achievements = [
-  {
-    icon: Award,
-    value: "20+",
-    label: "Anos de Experiência",
-  },
-  {
-    icon: Users,
-    value: "5000+",
-    label: "Pessoas Impactadas",
-  },
-  {
-    icon: BookOpen,
-    value: "3",
-    label: "Livros Publicados",
-  },
-  {
-    icon: TrendingUp,
-    value: "140+",
-    label: "Turmas Realizadas",
-  },
-];
+
 
 export const MentorSection = () => {
   return (
@@ -50,38 +29,127 @@ export const MentorSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-bold mb-2">João Silva</h3>
-              <p className="text-primary text-lg">Fundador do Método REI</p>
+              <h3 className="text-3xl font-bold mb-2">Dr. Santiago Vecina</h3>
+
             </div>
 
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Com mais de duas décadas de experiência em desenvolvimento pessoal e liderança, João Silva é reconhecido internacionalmente como um dos maiores especialistas em transformação humana.
+                Médico, empresário e palestrante internacional, Santiago Vecina é especialista em nutrologia esportiva e otimização da saúde. Ele já transformou vidas de atletas e profissionais de alta performance, levando equipes como o Esporte Clube São Bento e os Vipers ao topo de competições nacionais.
               </p>
               <p>
-                Formado em Psicologia pela Universidade de Lisboa, com especialização em Neurociência Comportamental em Harvard, João desenvolveu o Método REI após estudar e aplicar as melhores práticas de desenvolvimento humano em mais de 30 países.
+                Triatleta e criador do método SAAMS, que combina estratégias de saúde, nutrição e propósito, Santiago ajuda pessoas a perder até 20 kg em dois meses e a conquistar feitos como completar o Ironman.
               </p>
               <p>
-                Autor de 3 livros bestsellers sobre propósito e realização, já impactou mais de 5.000 pessoas através de seus programas presenciais e mentorias, ajudando-as a alcançar resultados extraordinários em suas vidas pessoais e profissionais.
+                Autor do livro "Médico do Corpo e da Alma", ele inspira uma nova forma de viver: com energia, foco e resultados extraordinários.
               </p>
+              <p>
+                Se você busca o próximo nível na vida ou nos negócios, Santiago é o mentor certo para te guiar.
+              </p>
+
             </div>
 
-            {/* Achievements */}
-            <div className="grid grid-cols-2 gap-4 pt-6">
-              {achievements.map((achievement, index) => {
-                const Icon = achievement.icon;
-                return (
-                  <Card key={index} className="p-4 bg-card border-border text-center">
-                    <Icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-primary">{achievement.value}</div>
-                    <div className="text-sm text-muted-foreground">{achievement.label}</div>
-                  </Card>
-                );
-              })}
+
+
+          </div>
+
+          <div className="relative">
+            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
+                <Users className="w-32 h-32" />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-3xl font-bold mb-2">Pablo Marçal</h3>
+
+            </div>
+
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                Pablo Marçal, cristão, casado com @carolmarcal1, pai do Lorenzo, Benjamin, Miguel e Isabela. Aos 36 anos, se tornou um dos patriarcas mais prósperos do Brasil.
+
+                Nas redes sociais é assistido por mais de 20 milhões de pessoas por mês.
+              </p>
+              <p>
+                Multiempreendedor, mentor, escritor, piloto de corrida e investidor. Hoje, lidera como CVO (Chief Visionary Officer) um grupo multibilionário nos ramos imobiliário, digital, ensino, seguros, vendas, automobilístico, aviação, tecnologia, hotelaria, fazenda e outros.
+              </p>
+              <p>
+                Mora no Jardim Europa – SP e tem um dos maiores ecossistemas empresariais da América Latina.
+              </p>
+              <p>
+                Marçal já liderou a semana de livros mais vendidos do país com mais de 35 títulos e muitos se tornaram Best Sellers.
+              </p>
+              <p>
+                Marçal se orgulha de ser professor de quase 1 milhão de alunos em mentorias e cursos na internet.
+              </p>
+              <p>
+                O propósito do Marçal é ativar a identidade e clarificar o propósito das pessoas que se conectem a ele. Seu maior desafio é transformar a mentalidade do povo brasileiro, através de todas as esferas da sociedade.
+              </p>
+
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
+                <Users className="w-32 h-32" />
+              </div>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-3xl font-bold mb-2">Nezio Monteiro</h3>
+
+            </div>
+
+            <div className="space-y-4 text-muted-foreground">
+              <p>Nezio hoje possui 24 empresas em diversos segmentos e já treinou mais de 20 mil pessoas em seus cursos, mentorias e eventos.
+              </p>
+              <p>
+                É um empreendedor serial que tem foco no crescimento exponencial. É especialista em GSR (Gestão simplificada de resultados).
+              </p>
+              <p>
+                Uma nova forma de gerir empresas sem se deixar travar por burocracias e processos lentos. É o novo modelo que funciona e gera resultados exponenciais nos negócios de Nezio Monteiro.
+              </p>
+              <p>
+                Nezio é cristão, casado com Jessyca Monteiro e pai de Ana Liz, palestrante, iron man e escritor. Tem como propósito destravar negócios e empresários que tem valores e princípios alinhados com o seu. E o mais importante, que tenham mensagens fortes em seus corações.</p>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
+                <Users className="w-32 h-32" />
+              </div>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-3xl font-bold mb-2">Thiago Rocha</h3>
+
+            </div>
+
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                Tiago Rocha é mentor Especialista na Criação e Desenvolvimento de Métodos e Metodologias de Ensino para Mentores e Palestrantes. Atua há mais de 10 anos no mercado de Infoeducação formando profissionais que desejam transformar seus conhecimentos em Mentorias e Palestras.
+              </p><p>
+                Já formou mais de 10 mil alunos e hoje é o Líder da Plataforma Global na Europa. Lidera múltiplos negócios e atende Mentores dos mais variados nichos.
+              </p><p>
+                É um profissional que vive o que ensina e fatura todos os meses múltiplos 7D com Mentorias e Infoprodutos.
+              </p>
+            </div>
+          </div>
+
+
+        </div></div>
     </section>
   );
 };

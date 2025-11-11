@@ -1,9 +1,10 @@
 import { HeroSection } from "@/components/HeroSection";
 import { TargetAudienceSection } from "@/components/TargetAudienceSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
-import { ModulesSection } from "@/components/ModulesSection";
+import { ProblemaSection } from "@/components/ProblemaSection";
 import { PricingSection } from "@/components/PricingSection";
 import { MentorSection } from "@/components/MentorSection";
+import { ModulesSection} from "@/components/ModulesSection"
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 
@@ -20,12 +21,13 @@ const Index = () => {
       </Helmet>
       
       <main className="min-h-screen">
-        <HeroSection />
+        <HeroSection /> 
         <TargetAudienceSection />
         <BenefitsSection />
-        <ModulesSection />
-        <PricingSection />
+        <ProblemaSection />
+        <ModulesSection/>
         <MentorSection />
+        <PricingSection />
         <Footer />
       </main>
     </>

@@ -5,22 +5,18 @@ const audiences = [
   {
     icon: TrendingUp,
     title: "Empreendedores",
-    description: "Que desejam levar seus negócios a um novo patamar através do autoconhecimento e estratégia",
+    description: "Homens que estavam cansados de correr o dia inteiro… e hoje têm empresa funcionando com mais leveza e lucro.",
   },
   {
     icon: Users,
     title: "Líderes",
-    description: "Que querem impactar positivamente suas equipes e organizações com liderança autêntica",
+    description: "Empresários que estavam travados, e depois de 2 dias no IP destravaram o crescimento que estava empacado há anos.",
   },
-  {
-    icon: Target,
-    title: "Profissionais",
-    description: "Em busca de propósito, clareza de direção e resultados extraordinários na carreira",
-  },
+  
   {
     icon: Zap,
     title: "Pessoas em Transformação",
-    description: "Prontas para ativar seu potencial máximo e criar uma vida de significado e abundância",
+    description: "Pais de família que carregavam tudo sozinhos… e hoje têm clareza, energia e estão construindo uma nova fase — por dentro e por fora.",
   },
 ];
 
@@ -30,7 +26,8 @@ export const TargetAudienceSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Para Quem é o <span className="text-primary">Método REI</span>?
+            Gente como você que
+decidiu<span className="text-primary"> virar a chave:</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Este evento é para você que está pronto para transformar sua vida em todas as dimensões
