@@ -7,6 +7,7 @@ import { MentorSection } from "@/components/MentorSection";
 import { ModulesSection} from "@/components/ModulesSection";
 import { MetodoSection } from "@/components/MetodoSection";
 import { FAQSection } from "@/components/FAQSection";
+import { ChoiceSection } from "@/components/ChoiceSection";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 
@@ -30,6 +31,7 @@ const Index = () => {
         <ModulesSection/>
         <MetodoSection />
         <MentorSection />
+        <ChoiceSection />
         <PricingSection />
         <FAQSection />
         <Footer />
