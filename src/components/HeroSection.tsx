@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-image.png";
 import logo from "@/assets/logo.png"
 
 export const HeroSection = () => {
