@@ -1,5 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Award, BookOpen, Users, TrendingUp } from "lucide-react";
+import mentorSantiago from "@/assets/mentor-santiago.png";
+import mentorPablo from "@/assets/mentor-pablo.png";
+import mentorNezio from "@/assets/mentor-nezio.png";
+import mentorThiago from "@/assets/mentor-thiago.png";
 
 
 
@@ -17,12 +21,14 @@ export const MentorSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* Image placeholder */}
+          {/* Image */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
-                <Users className="w-32 h-32" />
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden border-2 border-primary/30">
+              <img 
+                src={mentorSantiago} 
+                alt="Dr. Santiago Vecina" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -54,10 +60,12 @@ export const MentorSection = () => {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
-                <Users className="w-32 h-32" />
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden border-2 border-primary/30">
+              <img 
+                src={mentorPablo} 
+                alt="Pablo Marçal" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -94,10 +102,12 @@ export const MentorSection = () => {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
-                <Users className="w-32 h-32" />
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden border-2 border-primary/30">
+              <img 
+                src={mentorNezio} 
+                alt="Nezio Monteiro" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -123,10 +133,12 @@ export const MentorSection = () => {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border-2 border-primary/30 overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center text-primary/40">
-                <Users className="w-32 h-32" />
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden border-2 border-primary/30">
+              <img 
+                src={mentorThiago} 
+                alt="Thiago Rocha" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
