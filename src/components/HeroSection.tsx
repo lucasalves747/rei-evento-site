@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-background pt-20 pb-20 sm:pt-24 sm:pb-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-16 pb-16 sm:pt-24 sm:pb-24">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40"
@@ -16,9 +16,11 @@ export const HeroSection = () => {
       {/* Red Glow Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-primary/20" />
 
+      {/* Conteúdo */}
       <div className="container mx-auto px-5 sm:px-8 md:px-10 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-10 text-center lg:text-left">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center justify-center text-center lg:text-left">
+          {/* Coluna Esquerda */}
+          <div className="space-y-10 w-full max-w-2xl mx-auto lg:mx-0">
             {/* Logo */}
             <div className="flex justify-center lg:justify-start">
               <img
@@ -28,13 +30,13 @@ export const HeroSection = () => {
               />
             </div>
 
-            {/* Event Info */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-sm sm:text-base md:text-lg">
+            {/* Informações do Evento */}
+            <div className="hidden sm:flex  flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-sm sm:text-base md:text-lg">
               <div className="flex items-center gap-2">
                 <span className="text-primary">▸</span>
                 <span className="font-semibold">Método REI 26</span>
               </div>
-              <div className="flex items-center gap-2 text-primary">
+              <div className="flex items-center gap-2 text-primary hidden md:inline">
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>06 e 07 Dezembro</span>
               </div>
@@ -55,13 +57,10 @@ export const HeroSection = () => {
             <motion.div
               initial={{ opacity: 0, y: 80 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1.4,
-                ease: "easeOut",
-              }}
-              className="space-y-6 sm:space-y-8 p-5 sm:p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
+              transition={{ duration: 1.4, ease: "easeOut" }}
+              className="space-y-6 p-1 sm:space-y-8 p-5 sm:p-8 md:p-10 rounded-3xl md:bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
             >
-              {/* Main Headline */}
+              {/* Título */}
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight">
                 Em apenas 2 dias, você vai despertar sua verdadeira{" "}
                 <span className="text-primary">IDENTIDADE</span>, alinhar seu{" "}
@@ -70,7 +69,7 @@ export const HeroSection = () => {
                 <span className="text-primary">PROSPERAR</span> em todas as áreas da vida.
               </h2>
 
-              {/* Description */}
+              {/* Descrição */}
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                 Em 2 dias, descubra sua IDENTIDADE, alinhe seu PROPÓSITO e prospere em todas as áreas da vida.
               </p>
@@ -79,7 +78,7 @@ export const HeroSection = () => {
                 DOUBLETREE RESORT BY HILTON • 4000 S OCEAN DR. HOLLYWOOD, FL 33019
               </p>
 
-              {/* CTA Button */}
+              {/* Botão CTA */}
               <div className="flex justify-center lg:justify-start">
                 <Button
                   variant="hero"

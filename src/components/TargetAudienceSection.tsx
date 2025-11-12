@@ -25,7 +25,7 @@ const audiences = [
 
 export const TargetAudienceSection = () => {
   return (
-    <section className="py-20 md:py-28 bg-dark-surface relative overflow-hidden">
+    <section className="py-5 md:py-28 bg-dark-surface relative overflow-hidden">
       {/* Fundo translúcido */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
 
@@ -42,7 +42,7 @@ export const TargetAudienceSection = () => {
         </div>
 
         {/* Grid de cards */}
-        <div className="grid pt-8 sm:pt-10 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:pt-10 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {audiences.map((audience, index) => {
             const Icon = audience.icon;
             return (
@@ -57,7 +57,7 @@ export const TargetAudienceSection = () => {
                 }}
                 viewport={{ once: true }}
               >
-                <Card className="p-8 bg-white/10 backdrop-blur-xl border border-white/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.3)]">
+                <Card className="p-4 sm:p-10 bg-white/10 backdrop-blur-xl border border-white/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.3)]">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>

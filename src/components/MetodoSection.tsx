@@ -89,7 +89,7 @@ const metodoData = [
 
 export const MetodoSection = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/20">
+    <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto max-w-7xl">
         {/* Título */}
         <div className="text-center mb-10 sm:mb-14">

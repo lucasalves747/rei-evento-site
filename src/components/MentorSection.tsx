@@ -83,7 +83,7 @@ export const MentorSection = () => {
               </div>
 
               {/* Texto */}
-              <div className="space-y-6 text-center lg:text-left">
+              <div className="space-y-6  lg:text-left">
                 <h3 className="text-3xl font-bold text-foreground">{mentor.name}</h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   {mentor.bio.map((paragraph, i) => (
