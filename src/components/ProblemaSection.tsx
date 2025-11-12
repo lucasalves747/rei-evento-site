@@ -41,7 +41,7 @@ export const ProblemaSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="space-y-10 md:space-y-14 p-6 sm:p-10 rounded-3xl bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)]"
+          className="space-y-10 md:space-y-14 p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-2xl border border-white/20 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)]"
         >
           {/* Título principal */}
           <div className="text-center max-w-3xl mx-auto">
@@ -72,7 +72,7 @@ export const ProblemaSection = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  <Card className="p-6 sm:p-8 bg-white/10 border border-white/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.3)]">
+                  <Card className="p-6 sm:p-8 bg-white/5 border border-white/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.3)]">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
