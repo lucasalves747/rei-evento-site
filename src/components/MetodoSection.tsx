@@ -1,7 +1,91 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TypeAnimation } from "react-type-animation";
 
-const metodoData = [/* ... seu array como está ... */];
+const metodoData = [
+  {
+    title: "COMO DEIXAR DE SER ALIENADO",
+    topics: [
+      "Mentiras que te contaram",
+      "Saia do ritmo hipnótico",
+      "Como fazer perguntas",
+      "Liberdade",
+      "Deixe de ser idiota",
+      "O Câncer das famílias",
+      "Improdutividade"
+    ]
+  },
+  {
+    title: "O PIOR ANO DA SUA VIDA",
+    topics: [
+      "Crie problemas",
+      "Ame os problemas",
+      "Fracasse muito",
+      "Toxinas cerebrais",
+      "Controle mental absoluto",
+      "Curva de 40 dias",
+      "Curva de aprendizagem",
+      "Vá para guerra",
+      "Eu, o pior problema"
+    ]
+  },
+  {
+    title: "A FÓRMULA EXPONENCIAL",
+    topics: [
+      "Rendas passivas",
+      "Preços x Valor",
+      "A arte da atração",
+      "Ganhe dinheiro na compra",
+      "Venda areia no deserto",
+      "Gatilhos emocionais",
+      "Mente mestra",
+      "Chave maestra do universo",
+      "Os 3 capitais",
+      "Capitalização"
+    ]
+  },
+  {
+    title: "MODELAGEM",
+    topics: [
+      "Remédio da humanidade",
+      "Princípios",
+      "LifeStyle",
+      "As 4 revoluções",
+      "7 ciclos da vida",
+      "Zona de aprendizagem",
+      "Leia ainda esse ano",
+      "Código da tensão"
+    ]
+  },
+  {
+    title: "PRODUTIVIDADE",
+    topics: [
+      "Criatividade cíclica",
+      "O que você não quer fazer",
+      "Oportunidade x Atitude",
+      "Sociedade e falta de recurso",
+      "Dívidas são boas",
+      "5 ciclos empresariais",
+      "Não empreste dinheiro",
+      "Pare de forcar em dinheiro",
+      "Os 5 passos"
+    ]
+  },
+  {
+    title: "TRANSBORDO",
+    topics: [
+      "Propósito",
+      "Sem raiva de otários",
+      "Cale a boca e diga não",
+      "Modelagem",
+      "Como fazer tarefas",
+      "Qual desenho vai levar?",
+      "Comunicação",
+      "Energia radial",
+      "Retificação cerebral",
+      "Renda eterna"
+    ]
+  }
+];
 
 export const MetodoSection = () => {
   return (
@@ -14,7 +98,7 @@ export const MetodoSection = () => {
               sequence={[
                 "O MÉTODO",
                 2000,
-              ]}
+               ]}
               speed={50}
               repeat={Infinity}
             />

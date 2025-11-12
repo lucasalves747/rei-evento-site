@@ -72,7 +72,7 @@ export const ProblemaSection = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  <Card className="p-6 sm:p-8 bg-white/5 border border-white/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.3)]">
+                  <Card className="p-6 sm:p-8 bg-black/70 border border-white/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.3)]">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
