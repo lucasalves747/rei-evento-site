@@ -22,7 +22,7 @@ const Index = () => {
         />
         <meta name="keywords" content="desenvolvimento pessoal, transformação, liderança, propósito, método rei, lisboa, evento" />
       </Helmet>
-      
+       
       <main className="min-h-screen">
         <HeroSection /> 
         <TargetAudienceSection />
@@ -31,9 +31,9 @@ const Index = () => {
         <ModulesSection/>
         <MetodoSection />
         <MentorSection />
-        <ChoiceSection />
         <PricingSection />
         <FAQSection />
+        <ChoiceSection />
         <Footer />
       </main>
     </>
