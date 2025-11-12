@@ -8,31 +8,21 @@ interface NavLinkCompatProps extends Omit<NavLinkProps, "className"> {
   pendingClassName?: string;
 }
 
-/**
- * Um wrapper para o NavLink do React Router, compatível com Tailwind + class merging.
- * Permite definir estilos diferentes para estados ativo e pendente.
- */
-export const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
+const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
   ({ className, activeClassName, pendingClassName, to, ...props }, ref) => {
     return (
       <RouterNavLink
         ref={ref}
         to={to}
         className={({ isActive, isPending }) =>
-          cn(
-            // estilos base
-            "transition-colors duration-200",
-            className,
-            // estado ativo (ex: item selecionado)
-            isActive && activeClassName,
-            // estado pendente (ex: em carregamento de rota)
-            isPending && pendingClassName
-          )
+          cn(className, isActive && activeClassName, isPending && pendingClassName)
         }
         {...props}
       />
     );
-  }
+  },
 );
 
 NavLink.displayName = "NavLink";
+
+export { NavLink };
