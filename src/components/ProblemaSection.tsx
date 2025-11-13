@@ -41,10 +41,10 @@ export const ProblemaSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="space-y-4 md:space-y-14 p-2 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-2xl border border-white/20 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)]"
+          className="space-y-2 md:space-y-14 p-2 sm:p-10 rounded-xl bg-white/5 backdrop-blur-2xl border border-white/20 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)]"
         >
           {/* Título principal */}
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="px-2 sm:text-center max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
               Você já percebeu que{" "}
               <span className="text-primary">trabalha como nunca</span>, mas o
@@ -57,7 +57,7 @@ export const ProblemaSection = () => {
           </div>
 
           {/* Cards */}
-          <div className="grid pt-2 sm:pt-10 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid pt-2 sm:pt-10 md:grid-cols-2 lg:grid-cols-3 gap-2">
             {audiences.map((audience, index) => {
               const Icon = audience.icon;
               return (
@@ -84,7 +84,7 @@ export const ProblemaSection = () => {
           </div>
 
           {/* Chamada final */}
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="px-2 pt-5 sm:text-center max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-foreground">
               Chegou a hora de{" "}
               <span className="text-primary">
@@ -97,7 +97,7 @@ export const ProblemaSection = () => {
               <Button
                 variant="hero"
                 size="lg"
-                className=" px-10 py-5 h-auto animate-glow hover:scale-105 hover:bg-gradient-to-r from-primary to-primary/70 transition-transform duration-300 w-full sm:w-auto mx-auto"
+                className=" px-10 py-5 mb-5 h-auto animate-glow hover:scale-105 hover:bg-gradient-to-r from-primary to-primary/70 transition-transform duration-300 w-full sm:w-auto mx-auto"
               >
                 QUERO ENTRAR NO MÉTODO IP
               </Button>

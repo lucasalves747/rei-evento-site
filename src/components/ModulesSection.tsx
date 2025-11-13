@@ -59,11 +59,11 @@ export const ModulesSection = () => {
                            transition-all duration-300 group backdrop-blur-sm"
               >
                 <div className="flex items-start gap-4 mb-2">
-                  <div className="text-5xl sm:text-6xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
+                  <div className="text-5xl sm:text-6xl font-bold text-primary/70 group-hover:text-primary/70 transition-colors">
                     {module.number}
                   </div>
                 </div>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-white leading-relaxed">
                   {module.description}
                 </p>
               </Card>
@@ -88,11 +88,11 @@ export const ModulesSection = () => {
                            transition-all duration-300 group backdrop-blur-sm"
               >
                 <div className="flex items-start gap-4 mb-2">
-                  <div className="text-5xl sm:text-6xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
+                  <div className="text-5xl sm:text-6xl font-bold text-primary/70 group-hover:text-primary/70 transition-colors">
                     {module.number}
                   </div>
                 </div>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-white leading-relaxed">
                   {module.description}
                 </p>
               </Card>

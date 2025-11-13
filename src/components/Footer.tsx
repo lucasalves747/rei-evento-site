@@ -4,12 +4,12 @@ import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-darker-surface py-12 px-4">
+    <footer className="bg-darker-surface p-5 sm:py-12 px-4">
       <div className="container mx-auto">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 mb-10 text-center sm:text-left">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 mb-10 sm:text-center sm:text-left">
           {/* Brand */}
           <div className="space-y-4 flex flex-col items-center sm:items-start">
-            <div className="flex items-center justify-center sm:justify-start gap-3">
+            <div className="flex sm:items-center sm:justify-start gap-3">
               <img
                 src={logo}
                 alt="Logo Método REI"
@@ -25,15 +25,15 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-bold text-lg text-foreground">Contacto</h3>
             <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex justify-center sm:justify-start items-center gap-2">
+              <div className="flex  sm:justify-start items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
                 <span>contato@metodrei.com</span>
               </div>
-              <div className="flex justify-center sm:justify-start items-center gap-2">
+              <div className="flex  sm:justify-start items-center gap-2">
                 <Phone className="w-4 h-4 text-primary" />
                 <span>+351 21 123 4567</span>
               </div>
-              <div className="flex justify-center sm:justify-start items-center gap-2">
+              <div className="flex  sm:justify-start items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span>Miami, EUA</span>
               </div>

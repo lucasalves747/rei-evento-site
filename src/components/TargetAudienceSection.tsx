@@ -30,8 +30,8 @@ export const TargetAudienceSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
 
       <div className="relative container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        <div className="sm:text-center px-2 max-w-3xl mx-auto mb-10 sm:16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
             Gente como você que decidiu{" "}
             <span className="text-primary">virar a chave</span>:
           </h2>

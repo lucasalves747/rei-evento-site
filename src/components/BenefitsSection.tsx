@@ -23,12 +23,12 @@ export const BenefitsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Texto principal */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-snug sm:leading-tight text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-snug sm:leading-tight sm:text-center px-2 lg:text-left">
               Sabe o que separa quem vive no automático de quem{" "}
               <span className="text-primary">constrói algo grande de verdade</span>{" "}
               aqui nos EUA?
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground mb-8 leading-relaxed text-center lg:text-left">
+            <p className="text-base sm:text-lg text-muted-foreground mb-8 leading-relaxed px-2 sm:text-center lg:text-left">
               Não é dinheiro. Nem sorte. Nem diploma.
               <br className="hidden sm:block" />
               <br className="hidden sm:block" />
@@ -71,7 +71,7 @@ export const BenefitsSection = () => {
         </div>
 
         {/* Texto final */}
-        <div className="text-center max-w-2xl sm:max-w-3xl mx-auto mt-16 sm:mt-20">
+        <div className="px-2 sm:text-center max-w-2xl sm:max-w-3xl mx-auto mt-16 sm:mt-20">
           <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed">
             E você? Vai continuar vivendo no que te deram… ou vai assumir o que é seu de verdade?
           </p>

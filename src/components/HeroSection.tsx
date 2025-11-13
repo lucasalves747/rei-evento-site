@@ -18,7 +18,7 @@ export const HeroSection = () => {
 
       {/* Conteúdo */}
       <div className="container mx-auto px-5 sm:px-8 md:px-10 relative z-10">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center justify-center text-center lg:text-left">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center justify-center sm:text-center lg:text-left">
           {/* Coluna Esquerda */}
           <div className="space-y-10 w-full max-w-2xl mx-auto lg:mx-0">
             {/* Logo */}
@@ -52,13 +52,21 @@ export const HeroSection = () => {
                 </a>
               </div>
             </div>
+            <div className="sm:hidden">
+               <br/>
+                <br/>
+                 <br/>
+                  <br/>
+                   <br/>
+            </div>
+           
 
             {/* Card com animação */}
             <motion.div
               initial={{ opacity: 0, y: 80 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease: "easeOut" }}
-              className="space-y-6 p-1 sm:space-y-8 p-5 sm:p-8 md:p-10 rounded-3xl md:bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
+              className="space-y-6  sm:space-y-8 p-5 sm:p-8 md:p-10 rounded-3xl md:bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
             >
               {/* Título */}
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight">

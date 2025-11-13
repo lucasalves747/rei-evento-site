@@ -55,7 +55,7 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-4 bg-background">
+    <section className=" sm:py-20 md:py-24 sm:px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         {/* Cabeçalho */}
         <div className="text-center mb-10 sm:mb-12">
@@ -77,9 +77,9 @@ export const FAQSection = () => {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-card border border-border rounded-xl px-4 sm:px-6 py-2 shadow-sm hover:shadow-md transition-all"
+              className="bg-card border border-border rounded-xl  sm:px-6 py-2 shadow-sm hover:shadow-md transition-all"
             >
-              <AccordionTrigger className="text-left text-base sm:text-lg md:text-xl font-semibold text-foreground hover:text-primary transition-colors">
+              <AccordionTrigger className="text-left p-2 text-base sm:text-lg md:text-xl font-semibold text-foreground hover:text-primary transition-colors">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed pt-2 pb-4">
