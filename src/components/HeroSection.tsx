@@ -88,6 +88,7 @@ export const HeroSection = () => {
 
               {/* Botão CTA */}
               <div className="flex justify-center lg:justify-start">
+                <a href="https://link.salee.ai/widget/survey/el7zf7YLfRcmP8NN2SM2">
                 <Button
                   variant="hero"
                   size="lg"
@@ -95,6 +96,7 @@ export const HeroSection = () => {
                 >
                   QUERO ENTRAR NO MÉTODO IP
                 </Button>
+                </a>
               </div>
             </motion.div>
           </div>

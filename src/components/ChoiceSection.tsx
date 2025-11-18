@@ -54,6 +54,7 @@ export const ChoiceSection = () => {
 
         {/* Botão */}
         <div className="text-center">
+          <a href="https://link.salee.ai/widget/survey/el7zf7YLfRcmP8NN2SM2">
           <Button
             variant="hero"
             size="lg"
@@ -61,6 +62,7 @@ export const ChoiceSection = () => {
           >
             QUERO ENTRAR NO MÉTODO IP
           </Button>
+          </a>
         </div>
       </div>
     </section>

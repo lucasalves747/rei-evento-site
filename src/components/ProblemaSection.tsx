@@ -94,6 +94,7 @@ export const ProblemaSection = () => {
             </h2>
 
             <div className="flex justify-center">
+              <a href="https://link.salee.ai/widget/survey/el7zf7YLfRcmP8NN2SM2">
               <Button
                 variant="hero"
                 size="lg"
@@ -101,6 +102,7 @@ export const ProblemaSection = () => {
               >
                 QUERO ENTRAR NO MÉTODO IP
               </Button>
+              </a>
             </div>
           </div>
         </motion.div>
