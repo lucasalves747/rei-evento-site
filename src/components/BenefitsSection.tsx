@@ -77,7 +77,7 @@ export const BenefitsSection = () => {
           </div>
         </div>
 
-        <Card className="bg-white m-10 p-5 sm:mx-20 sm:mt-20 border border-border hover:border-white/50  hover:shadow-lg hover:shadow-white/20">
+        <Card className="bg-white p-5 mt-10 mx-2 sm:mx-20 sm:mt-20 border border-border hover:border-white/50  hover:shadow-lg hover:shadow-white/20">
                     <div className="px-2 sm:text-center  ">
           <p className="text-black/90  sm:text-lg md:text-xl  leading-relaxed font-semibold">
             E você? Vai continuar vivendo no que te deram… ou vai assumir o que é seu de verdade?
