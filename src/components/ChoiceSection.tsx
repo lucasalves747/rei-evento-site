@@ -18,7 +18,7 @@ export const ChoiceSection = () => {
           <div className="relative p-6 sm:p-8 rounded-2xl bg-muted/50 border-2 border-destructive/30 backdrop-blur-md">
             {/* Badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-              <div className="bg-destructive text-destructive-foreground px-4 sm:px-6 py-2 rounded-full flex items-center gap-2 text-sm sm:text-base">
+              <div className="bg-white/60 text-destructive-foreground px-4 sm:px-6 py-2 rounded-full flex items-center gap-2 text-sm sm:text-base">
                 <X className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="font-semibold">Zona de Conforto</span>
               </div>

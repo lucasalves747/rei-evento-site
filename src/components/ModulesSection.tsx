@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const modules = [
   {
@@ -40,8 +41,9 @@ const modules2 = [
 
 export const ModulesSection = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-12 bg-dark-surface">
+    <section className="py-10 sm:py-20 px-4 sm:px-6 lg:px-12 bg-dark-surface">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-start max-w-7xl mx-auto">
+
         {/* Coluna 1 */}
         <div>
           <div className="text-center lg:text-left max-w-3xl mx-auto mb-10">
@@ -52,21 +54,28 @@ export const ModulesSection = () => {
           </div>
 
           <div className="flex flex-col gap-6">
-            {modules.map((module) => (
-              <Card
+            {modules.map((module, index) => (
+              <motion.div
                 key={module.number}
-                className="p-6 bg-card/80 border border-border hover:border-primary/70 
-                           transition-all duration-300 group backdrop-blur-sm"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
               >
-                <div className="flex items-start gap-4 mb-2">
-                  <div className="text-5xl sm:text-6xl font-bold text-primary/70 group-hover:text-primary/70 transition-colors">
-                    {module.number}
+                <Card
+                  className="p-6 bg-card/80 border border-border hover:border-primary/70 
+                             transition-all duration-300 group backdrop-blur-sm"
+                >
+                  <div className="flex items-start gap-4 mb-2">
+                    <div className="text-5xl sm:text-6xl font-bold text-primary/70 group-hover:text-primary/70 transition-colors">
+                      {module.number}
+                    </div>
                   </div>
-                </div>
-                <p className="text-sm sm:text-base text-white leading-relaxed">
-                  {module.description}
-                </p>
-              </Card>
+                  <p className="text-sm sm:text-base text-white leading-relaxed">
+                    {module.description}
+                  </p>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -81,21 +90,28 @@ export const ModulesSection = () => {
           </div>
 
           <div className="flex flex-col gap-6">
-            {modules2.map((module) => (
-              <Card
+            {modules2.map((module, index) => (
+              <motion.div
                 key={module.number}
-                className="p-6 bg-card/80 border border-border hover:border-primary/70 
-                           transition-all duration-300 group backdrop-blur-sm"
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
               >
-                <div className="flex items-start gap-4 mb-2">
-                  <div className="text-5xl sm:text-6xl font-bold text-primary/70 group-hover:text-primary/70 transition-colors">
-                    {module.number}
+                <Card
+                  className="p-6 bg-card/80 border border-border hover:border-primary/70 
+                             transition-all duration-300 group backdrop-blur-sm"
+                >
+                  <div className="flex items-start gap-4 mb-2">
+                    <div className="text-5xl sm:text-6xl font-bold text-primary/70 group-hover:text-primary/70 transition-colors">
+                      {module.number}
+                    </div>
                   </div>
-                </div>
-                <p className="text-sm sm:text-base text-white leading-relaxed">
-                  {module.description}
-                </p>
-              </Card>
+                  <p className="text-sm sm:text-base text-white leading-relaxed">
+                    {module.description}
+                  </p>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
