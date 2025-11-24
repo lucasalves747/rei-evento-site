@@ -9,7 +9,7 @@ import backmobile from "@/assets/black_red_background.png"
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-8 pb-16 sm:pt-0 sm:pb-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-8 pb-16 sm:pt-0 md:pt-24 sm:pb-24">
       
       {/* Background Image pc */}
       <div
