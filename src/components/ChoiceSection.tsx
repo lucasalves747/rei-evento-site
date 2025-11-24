@@ -58,7 +58,7 @@ export const ChoiceSection = () => {
           <Button
             variant="hero"
             size="lg"
-            className="w-full sm:w-auto text-base sm:text-lg px-10 sm:px-12 py-5 sm:py-6 h-auto animate-glow"
+            className="w-full sm:w-auto text-sm sm:text-lg px-10 sm:px-12 py-5 sm:py-6 h-auto animate-glow"
           >
             QUERO ENTRAR NO MÉTODO IP
           </Button>

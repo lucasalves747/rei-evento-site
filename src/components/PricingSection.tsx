@@ -51,7 +51,7 @@ export const PricingSection = () => {
                   <Button
                     variant="hero"
                     size="lg"
-                    className="text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 h-auto animate-glow w-full sm:w-auto"
+                    className="text-sm sm:text-lg px-8 sm:px-12 py-4 sm:py-6 h-auto animate-glow w-full sm:w-auto"
                   >
                     QUERO ENTRAR NO MÉTODO IP
                   </Button>

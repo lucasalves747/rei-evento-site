@@ -27,11 +27,11 @@ export const Footer = () => {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex  sm:justify-start items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>contato@metodrei.com</span>
+                <span>info@bclub.global</span>
               </div>
               <div className="flex  sm:justify-start items-center gap-2">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+351 21 123 4567</span>
+                <span>+1 (689) 302-4511</span>
               </div>
               <div className="flex  sm:justify-start items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />

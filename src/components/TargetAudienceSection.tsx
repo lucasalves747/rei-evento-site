@@ -2,6 +2,14 @@ import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
 const audiences = [
   {
     icon: TrendingUp,
@@ -23,10 +31,16 @@ const audiences = [
   },
 ];
 
+const videos = [
+  "https://player.vimeo.com/video/1083156855?autopause=0&app_id=122963",
+  "https://www.youtube.com/embed/2VKqHAn6Wo4?enablejsapi=1&rel=0&modestbranding=1&playsinline=1&color=white",
+  "https://www.youtube.com/embed/OYxGNUa3KG4?enablejsapi=1&rel=0&modestbranding=1&playsinline=1&color=white",
+  "https://www.youtube.com/embed/62xXLhqWo6I?enablejsapi=1&rel=0&modestbranding=1&playsinline=1&color=white",
+];
+
 export const TargetAudienceSection = () => {
   return (
     <section className="py-5 md:py-28 bg-dark-surface relative overflow-hidden">
-      {/* Fundo translúcido */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
 
       <div className="relative container mx-auto px-6">
@@ -41,7 +55,7 @@ export const TargetAudienceSection = () => {
           </p>
         </div>
 
-        {/* Grid de cards */}
+        {/* Cards */}
         <div className="grid sm:pt-10 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {audiences.map((audience, index) => {
             const Icon = audience.icon;
@@ -72,6 +86,34 @@ export const TargetAudienceSection = () => {
             );
           })}
         </div>
+
+        {/* Carrossel de Vídeos */}
+        <div className="mt-16">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1}
+            centeredSlides
+            loop
+            pagination={{ clickable: true }}
+            navigation
+            className="rounded-xl overflow-hidden"
+          >
+            {videos.map((url, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="w-full aspect-video rounded-xl overflow-hidden">
+                  <iframe
+                    src={url}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
       </div>
     </section>
   );
