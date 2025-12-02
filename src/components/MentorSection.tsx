@@ -39,16 +39,7 @@ export const MentorSection = () => {
         "Nezio é cristão, casado com Jessyca Monteiro e pai de Ana Liz, palestrante, iron man e escritor. Tem como propósito destravar negócios e empresários que têm valores e princípios alinhados com o seu.",
       ],
     },
-    {
-      name: "Thiago Rocha",
-      image: mentorThiago,
-      bio: [
-        "Tiago Rocha é mentor especialista na criação e desenvolvimento de métodos e metodologias de ensino para mentores e palestrantes.",
-        "Atua há mais de 10 anos no mercado de Infoeducação formando profissionais que desejam transformar seus conhecimentos em mentorias e palestras.",
-        "Já formou mais de 10 mil alunos e hoje é o líder da Plataforma Global na Europa. Lidera múltiplos negócios e atende mentores dos mais variados nichos.",
-        "É um profissional que vive o que ensina e fatura todos os meses múltiplos 7 dígitos com mentorias e infoprodutos.",
-      ],
-    },
+    
   ];
 
   return (
