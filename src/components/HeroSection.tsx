@@ -57,7 +57,7 @@ export const HeroSection = () => {
               <div className="hidden sm:flex  flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-sm sm:text-base md:text-lg">
                 <div className="flex items-center gap-2">
                   <span className="text-primary">▸</span>
-                  <span className="font-semibold">Método REI 26</span>
+                  <span className="font-semibold">Método IP</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary">
                   <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -89,15 +89,15 @@ export const HeroSection = () => {
                 {/* Título */}
                 <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight">
                   Em apenas 2 dias, você vai despertar sua verdadeira{" "}
-                  <span className="text-primary">Identidade</span>, alinhar seu{" "}
-                  <span className="text-primary">Propósito</span> e destravar o caminho
+                  <span className="text-primary">identidade</span>, alinhar seu{" "}
+                  <span className="text-primary">propósito</span> e destravar o caminho
                   <br className="hidden md:block" /> para{" "}
-                  <span className="text-primary">Prosperar</span> em todas as áreas da vida.
+                  <span className="text-primary">prosperar</span> em todas as áreas da vida.
                 </h2>
 
                 {/* Descrição */}
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Em 2 dias, descubra sua IDENTIDADE, alinhe seu PROPÓSITO e prospere em todas as áreas da vida.
+                  Em 2 dias, descubra sua identidade, alinhe seu Propósito e prospere em todas as áreas da vida.
                 </p>
 
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
