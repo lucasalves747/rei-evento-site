@@ -27,7 +27,7 @@ const audiences = [
     icon: Zap,
     title: "Pessoas em Transformação",
     description:
-      "Pais de família que carregavam tudo sozinhos… e hoje têm clareza, energia e estão construindo uma nova fase — por dentro e por fora.",
+      "Pais de família que carregavam tudo sozinhos… e hoje têm clareza, energia e estão construindo uma nova fase, por dentro e por fora.",
   },
 ];
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import imgback from "@/assets/background _leao.png"
 
 const includes = [
   "2 dias de imersão intensiva com Nezio Monteiro",
@@ -9,7 +10,7 @@ const includes = [
 
 export const PricingSection = () => {
   return (
-    <section className="py-20 sm:py-24 bg-background relative overflow-hidden">
+    <section className="py-20 sm:py-24 bg-cover bg-center bg-fixed relative overflow-hidden" style={{backgroundImage: `url(${imgback})`}}>
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
 
@@ -26,17 +27,17 @@ export const PricingSection = () => {
 
         {/* Card */}
         <div className="max-w-5xl mx-auto">
-          <Card className="p-6 sm:p-8 lg:p-12 bg-card border-2 border-primary/50 relative overflow-hidden backdrop-blur-sm">
+          <Card className="p-6 sm:p-8 lg:p-12 bg-card/45 border-2 border-primary/50 relative overflow-hidden backdrop-blur-md">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Pricing Info */}
               <div className="space-y-6">
                 <div>
                   <p className="text-base sm:text-lg lg:text-2xl leading-relaxed text-foreground">
-                    GARANTIA <span className="text-primary font-semibold">MÉTODO IP</span> — 
+                    GARANTIA <span className="text-primary font-semibold">MÉTODO IP</span>,
                     se após o primeiro dia de imersão você sentir que o método não está 
                     alinhado com suas expectativas, basta nos comunicar e 
                     <span className="text-primary font-semibold"> devolveremos 100%</span> 
-                    do seu investimento — sem perguntas, sem burocracia.
+                    do seu investimento sem perguntas, sem burocracia.
                   </p>
                   <p className="mt-4 text-base sm:text-lg text-muted-foreground">
                     Assumimos todo o risco porque <span className="text-primary font-semibold">sabemos</span> 

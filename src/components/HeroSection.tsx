@@ -84,7 +84,7 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, y: 80 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.4, ease: "easeOut" }}
-                className="space-y-6  sm:space-y-8 p-5 sm:p-8 md:p-10 rounded-3xl md:bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
+                className="space-y-6  sm:space-y-8 p-5 sm:p-8 md:p-10 rounded-3xl md:bg-black/50 backdrop-blur-xl border border-white/20 shadow-2xl"
               >
                 {/* Título */}
                 <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight">

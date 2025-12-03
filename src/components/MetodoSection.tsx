@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TypeAnimation } from "react-type-animation";
+import black_red_abstract from "@/assets/black_red_abstract_4.png";
+
 
 const metodoData = [
   {
@@ -89,7 +91,10 @@ const metodoData = [
 
 export const MetodoSection = () => {
   return (
-    <section className="py-8  sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/20">
+    <section
+  className="py-8 sm:px-6 lg:px-8 bg-cover bg-center bg-fixed"
+  style={{ backgroundImage: `url(${black_red_abstract})` }}
+>
       <div className="container mx-auto max-w-7xl">
         {/* Título */}
         <div className="sm:text-center mb-10 sm:mb-14">
@@ -114,7 +119,7 @@ export const MetodoSection = () => {
           {metodoData.map((module, index) => (
             <Card
               key={index}
-              className="bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/50 
+              className="bg-black/40 backdrop-blur-md border border-border/50 hover:border-primary/50 
                          transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
             >
               <CardHeader>

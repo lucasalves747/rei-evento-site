@@ -23,7 +23,7 @@ const modules = [
 const modules2 = [
   {
     number: "01",
-    description: "Você vai acordar com leveza — sabendo o que quer, o que fazer e por que fazer.",
+    description: "Você vai acordar com leveza,sabendo o que quer, o que fazer e por que fazer.",
   },
   {
     number: "02",
@@ -31,11 +31,11 @@ const modules2 = [
   },
   {
     number: "03",
-    description: "Vai aprender a controlar sua mente e suas emoções até nos piores dias — sem mais sabotagem, sem mais paralisia.",
+    description: "Vai aprender a controlar sua mente e suas emoções até nos piores dias, sem mais sabotagem, sem mais paralisia.",
   },
   {
     number: "04",
-    description: "Vai estar cercado de gente que pensa grande, te impulsiona e te lembra todo dia que você veio pros EUA pra crescer — não pra sobreviver.",
+    description: "Vai estar cercado de gente que pensa grande, te impulsiona e te lembra todo dia que você veio pros EUA pra crescer,não pra sobreviver.",
   },
 ];
 
