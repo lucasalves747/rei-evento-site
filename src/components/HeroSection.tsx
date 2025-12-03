@@ -89,10 +89,10 @@ export const HeroSection = () => {
                 {/* Título */}
                 <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight">
                   Em apenas 2 dias, você vai despertar sua verdadeira{" "}
-                  <span className="text-primary">IDENTIDADE</span>, alinhar seu{" "}
-                  <span className="text-primary">PROPÓSITO</span> e destravar o caminho
+                  <span className="text-primary">Identidade</span>, alinhar seu{" "}
+                  <span className="text-primary">Propósito</span> e destravar o caminho
                   <br className="hidden md:block" /> para{" "}
-                  <span className="text-primary">PROSPERAR</span> em todas as áreas da vida.
+                  <span className="text-primary">Prosperar</span> em todas as áreas da vida.
                 </h2>
 
                 {/* Descrição */}
