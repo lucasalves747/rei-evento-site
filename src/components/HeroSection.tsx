@@ -15,7 +15,7 @@ export const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center  hidden md:block"
         style={{ backgroundImage: `url(${heroImage})` }}
-      />
+      />  
 
       {/* Background Image tablet */}
       <div
