@@ -34,55 +34,71 @@ export const MentorSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-background relative overflow-hidden">
+    <section className="py-16 sm:py-24 bg-[#0a0a0a] relative overflow-hidden">
       {/* Grid background pattern */}
       <div 
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundImage: `
+            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
+          `,
+          backgroundSize: '80px 80px'
         }}
       />
       
       <div className="container mx-auto relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16 px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center max-w-3xl mx-auto mb-20 px-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Conheça os <span className="text-primary">Mentores</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-gray-400">
             Especialistas dedicados à transformação de vidas
           </p>
         </div>
 
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-32">
           {mentors.map((mentor, index) => (
             <div
               key={index}
-              className={`flex flex-col lg:flex-row items-center gap-8 lg:gap-0 ${
+              className={`relative flex flex-col lg:flex-row items-center ${
                 index % 2 === 1 ? "lg:flex-row-reverse" : ""
               }`}
             >
-              {/* Image container with red card background */}
-              <div className="relative flex-shrink-0 w-full lg:w-1/2 flex justify-center lg:justify-start px-4">
-                {/* Red decorative card */}
-                <div className="absolute top-8 right-8 lg:right-auto lg:left-32 w-48 h-64 sm:w-56 sm:h-72 bg-primary rounded-2xl z-0" />
+              {/* Left side - Image with red card */}
+              <div className="relative w-full lg:w-1/2 flex justify-center">
+                {/* Red decorative card with gradient */}
+                <div 
+                  className={`absolute ${index % 2 === 1 ? "right-4 lg:right-20" : "left-4 lg:left-20"} top-1/2 -translate-y-1/2 w-52 h-80 sm:w-64 sm:h-96 rounded-3xl z-0 overflow-hidden`}
+                  style={{
+                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
+                    boxShadow: '0 25px 50px -12px rgba(220, 38, 38, 0.4)'
+                  }}
+                >
+                  {/* Simulated event images overlay */}
+                  <div className="absolute inset-0 opacity-30">
+                    <div className="absolute top-4 left-4 right-4 h-24 bg-black/40 rounded-lg" />
+                    <div className="absolute top-32 left-4 right-4 h-16 bg-black/40 rounded-lg" />
+                    <div className="absolute bottom-4 left-4 right-4 h-20 bg-black/40 rounded-lg" />
+                  </div>
+                </div>
                 
                 {/* Mentor image */}
                 <div className="relative z-10">
                   <img
                     src={mentor.image}
                     alt={mentor.name}
-                    className="w-72 sm:w-80 lg:w-96 h-auto object-contain drop-shadow-2xl"
+                    className="w-80 sm:w-96 lg:w-[450px] h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]"
                   />
                 </div>
               </div>
 
-              {/* Text content */}
-              <div className={`flex-1 px-4 lg:px-8 space-y-6 ${index % 2 === 1 ? "lg:text-right" : ""}`}>
-                <h3 className="text-3xl sm:text-4xl font-bold text-foreground">
+              {/* Right side - Text content */}
+              <div className={`flex-1 px-6 lg:px-12 mt-8 lg:mt-0 ${index % 2 === 1 ? "lg:text-right lg:pr-8" : "lg:pl-8"}`}>
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                   {mentor.name}
                 </h3>
-                <div className="space-y-4 text-muted-foreground leading-relaxed text-sm sm:text-base">
+                <div className="space-y-5 text-gray-300 leading-relaxed text-sm sm:text-base">
                   {mentor.bio.map((paragraph, i) => (
                     <p key={i}>{paragraph}</p>
                   ))}
