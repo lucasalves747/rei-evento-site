@@ -40,7 +40,7 @@ const videos = [
 
 export const TargetAudienceSection = () => {
   return (
-    <section className="py-5 md:py-28 bg-dark-surface relative overflow-hidden">
+    <section className="py-10 md:py-10 bg-dark-surface relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
 
       <div className="relative container mx-auto px-6">
@@ -56,7 +56,7 @@ export const TargetAudienceSection = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid sm:pt-10 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-3">
           {audiences.map((audience, index) => {
             const Icon = audience.icon;
             return (

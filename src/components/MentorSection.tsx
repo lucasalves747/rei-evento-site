@@ -1,12 +1,16 @@
 import bgSantiago from "@/assets/santiagobg.png";
 import bgPablo from "@/assets/pablobg.png";
 import bgNezio from "@/assets/nesiobg.png";
+import nesio from "@/assets/nesio.png"
+import pablo from "@/assets/pablo.png"
+import santiago from "@/assets/santiago.png"
 
 export const MentorSection = () => {
   const mentors = [
     {
       name: "Pablo Marçal",
       background: bgPablo,
+      img:pablo,
       bio: [
         "Pablo Marçal, casado com @carolmarcal1 e pai de Lorenzo, Benjamin, Miguel e Isabela. Aos 36 anos tornou-se um dos patriarcas mais prósperos do Brasil.",
         "Nas redes sociais, é seguido por mais de 20 milhões de pessoas a cada mês. Acompanhe pelos canais oficiais: Blog Pablo Marçal, Cortes do Marçal, Instagram, TikTok, YouTube, Twitter e Threads. É multiempreendedor, mentor, escritor, piloto de corridas e investidor. Atualmente lidera, como CVO (Chief Visionary Officer), um grupo multibilionário nos setores imobiliário, digital, educacional, de seguros, vendas, automobilístico, aviação, tecnologia, hotelaria, agronegócio e outros.",
@@ -16,6 +20,7 @@ export const MentorSection = () => {
     {
       name: "Dr. Santiago Vecina",
       background: bgSantiago,
+      img: santiago,
       bio: [
         "Médico, empresário e palestrante internacional, Santiago Vecina é especialista em nutrologia esportiva e otimização da saúde.",
         "Ele já transformou a vida de atletas e profissionais de alta performance, levando equipes como o Esporte Clube São Bento e os Vipers ao topo de competições nacionais. Triatleta e criador do método SAAMS, que combina estratégias de saúde, nutrição e propósito.",
@@ -25,6 +30,7 @@ export const MentorSection = () => {
     {
       name: "Nezio Monteiro",
       background: bgNezio,
+      img: nesio,
       bio: [
         "Possui hoje 24 empresas em diversos segmentos e já treinou mais de 20 mil pessoas em seus cursos, mentorias e eventos.",
         "É um empreendedor serial com foco no crescimento exponencial e especialista em GSR (Gestão Simplificada de Resultados). Essa é uma nova forma de gerir empresas sem se prender a burocracias e processos lentos, um modelo moderno que funciona e gera resultados exponenciais nos negócios.",
@@ -60,36 +66,51 @@ export const MentorSection = () => {
     <div className="flex flex-col gap-32">
       {mentors.map((mentor, index) => (
         <div
-          key={index}
-          className="relative w-full rounded-3xl overflow-hidden min-h-[650px]"
-        >
-          {/* BACKGROUND FULL WIDTH */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${mentor.background})`,
-            }}
-          />
+  key={index}
+  className="relative w-full rounded-3xl overflow-hidden min-h-[650px]"
+>
+  {/* DESKTOP: BACKGROUND FULL WIDTH */}
+  <div
+    className="hidden md:block absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage: `url(${mentor.background})`,
+    }}
+  />
 
-          {/* ESCURECER */}
-          <div className="absolute inset-0 bg-black/50" />
+  {/* MOBILE – TABLET: IMAGEM NORMAL ACIMA */}
+  <img
+    src={mentor.img}
+    alt={mentor.name}
+    className="block md:hidden w-full h-auto object-cover"
+  />
 
-          {/* CONTEÚDO */}
-          <div className="relative z-10 flex justify-end px-6 lg:px-12 py-16 h-full">
-            {/* CARD CINZA — ALTURA IGUAL PARA TODOS */}
-            <div className="bg-gray-900/80 backdrop-blur-xl p-10 rounded-3xl max-w-xl shadow-[0_0_40px_rgba(0,0,0,0.6)] h-full overflow-y-auto">
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                {mentor.name}
-              </h3>
+  {/* CONTEÚDO */}
+  <div
+    className={`
+      relative z-10 flex 
+      md:justify-end
+      mt-6 md:mt-20 px-6 lg:px-12 py-10 md:py-16 h-full
+      flex-col md:flex-row
+    `}
+  >
+    {/* CARD — FIXO IGUAL PARA TODOS */}
+    <div className="
+      bg-gray-900/10 backdrop-blur-xl p-10 rounded-3xl 
+      max-w-xl shadow-[0_0_40px_rgba(0,0,0,0.6)]
+      w-full md:h-full
+    ">
+      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+        {mentor.name}
+      </h3>
 
-              <div className="space-y-5 text-gray-300 leading-relaxed text-sm sm:text-base">
-                {mentor.bio.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="space-y-5 text-gray-300 leading-relaxed text-sm sm:text-base">
+        {mentor.bio.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
       ))}
     </div>
   </div>

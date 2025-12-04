@@ -41,8 +41,8 @@ const modules2 = [
 
 export const ModulesSection = () => {
   return (
-    <section className="py-10 sm:py-20 px-4 sm:px-6 lg:px-12 bg-dark-surface">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-start max-w-7xl mx-auto">
+    <section className="py-10  px-4 sm:px-6 lg:px-12 bg-dark-surface">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-10 items-start max-w-7xl mx-auto">
 
         {/* Coluna 1 */}
         <div>

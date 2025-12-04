@@ -41,7 +41,7 @@ export const ProblemaSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="space-y-2 md:space-y-14 p-2 sm:p-10 rounded-xl bg-white/5 backdrop-blur-2xl border border-white/20 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)]"
+          className="space-y-2 md:space-y-2 p-2 sm:p-10 rounded-xl bg-white/5 backdrop-blur-2xl border border-white/20 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)]"
         >
           {/* Título principal */}
           <div className="px-2 sm:text-center max-w-3xl mx-auto">
@@ -84,7 +84,7 @@ export const ProblemaSection = () => {
           </div>
 
           {/* Chamada final */}
-          <div className="px-2 pt-5 sm:text-center max-w-3xl mx-auto">
+          <div className="px-2 pt-8 sm:text-center max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-foreground">
               Chegou a hora de{" "}
               <span className="text-primary">
