@@ -1,7 +1,6 @@
 import mentorSantiago from "@/assets/mentor-santiago.png";
 import mentorPablo from "@/assets/mentor-pablo.png";
 import mentorNezio from "@/assets/mentor-nezio.png";
-import mentorBackground from "@/assets/mentor-background.png";
 
 export const MentorSection = () => {
   const mentors = [
@@ -62,61 +61,47 @@ export const MentorSection = () => {
           {mentors.map((mentor, index) => (
             <div
               key={index}
-              className="relative"
-            >
-              {/* Background with crowd image */}
-              <div 
-                className="absolute inset-0 opacity-40"
-                style={{
-                  backgroundImage: `url(${mentorBackground})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              />
-              {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a]" />
-              
-              <div className={`relative z-10 flex flex-col lg:flex-row items-center py-12 ${
+              className={`relative flex flex-col lg:flex-row items-center ${
                 index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}>
-                {/* Left side - Image with red card */}
-                <div className="relative w-full lg:w-1/2 flex justify-center">
-                  {/* Red decorative card with gradient */}
-                  <div 
-                    className={`absolute ${index % 2 === 1 ? "right-4 lg:right-20" : "left-4 lg:left-20"} top-1/2 -translate-y-1/2 w-52 h-80 sm:w-64 sm:h-96 rounded-3xl z-0 overflow-hidden`}
-                    style={{
-                      background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
-                      boxShadow: '0 25px 50px -12px rgba(220, 38, 38, 0.4)'
-                    }}
-                  >
-                    {/* Event image inside card */}
-                    <img 
-                      src={mentorBackground} 
-                      alt="Evento" 
-                      className="w-full h-full object-cover opacity-50 mix-blend-overlay"
-                    />
-                  </div>
-                  
-                  {/* Mentor image */}
-                  <div className="relative z-10">
-                    <img
-                      src={mentor.image}
-                      alt={mentor.name}
-                      className="w-80 sm:w-96 lg:w-[450px] h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]"
-                    />
+              }`}
+            >
+              {/* Left side - Image with red card */}
+              <div className="relative w-full lg:w-1/2 flex justify-center">
+                {/* Red decorative card with gradient */}
+                <div 
+                  className={`absolute ${index % 2 === 1 ? "right-4 lg:right-20" : "left-4 lg:left-20"} top-1/2 -translate-y-1/2 w-52 h-80 sm:w-64 sm:h-96 rounded-3xl z-0 overflow-hidden`}
+                  style={{
+                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
+                    boxShadow: '0 25px 50px -12px rgba(220, 38, 38, 0.4)'
+                  }}
+                >
+                  {/* Simulated event images overlay */}
+                  <div className="absolute inset-0 opacity-30">
+                    <div className="absolute top-4 left-4 right-4 h-24 bg-black/40 rounded-lg" />
+                    <div className="absolute top-32 left-4 right-4 h-16 bg-black/40 rounded-lg" />
+                    <div className="absolute bottom-4 left-4 right-4 h-20 bg-black/40 rounded-lg" />
                   </div>
                 </div>
+                
+                {/* Mentor image */}
+                <div className="relative z-10">
+                  <img
+                    src={mentor.image}
+                    alt={mentor.name}
+                    className="w-80 sm:w-96 lg:w-[450px] h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]"
+                  />
+                </div>
+              </div>
 
-                {/* Right side - Text content */}
-                <div className={`flex-1 px-6 lg:px-12 mt-8 lg:mt-0 ${index % 2 === 1 ? "lg:text-right lg:pr-8" : "lg:pl-8"}`}>
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                    {mentor.name}
-                  </h3>
-                  <div className="space-y-5 text-gray-300 leading-relaxed text-sm sm:text-base">
-                    {mentor.bio.map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
-                    ))}
-                  </div>
+              {/* Right side - Text content */}
+              <div className={`flex-1 px-6 lg:px-12 mt-8 lg:mt-0 ${index % 2 === 1 ? "lg:text-right lg:pr-8" : "lg:pl-8"}`}>
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                  {mentor.name}
+                </h3>
+                <div className="space-y-5 text-gray-300 leading-relaxed text-sm sm:text-base">
+                  {mentor.bio.map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
                 </div>
               </div>
             </div>
