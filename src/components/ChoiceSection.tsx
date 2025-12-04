@@ -3,7 +3,7 @@ import { X, Check } from "lucide-react";
 
 export const ChoiceSection = () => {
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section className="py-2 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
         {/* Título */}
         <div className="text-center mb-12 sm:mb-16">

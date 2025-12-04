@@ -10,7 +10,7 @@ const includes = [
 
 export const PricingSection = () => {
   return (
-    <section className="py-20 sm:py-24 bg-cover bg-center bg-fixed relative overflow-hidden" style={{backgroundImage: `url(${imgback})`}}>
+    <section className="py-10 bg-cover bg-center bg-fixed relative overflow-hidden" style={{backgroundImage: `url(${imgback})`}}>
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
 
@@ -26,7 +26,7 @@ export const PricingSection = () => {
         </div>
 
         {/* Card */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl pb-8 mx-auto">
           <Card className="p-6 sm:p-8 lg:p-12 bg-card/45 border-2 border-primary/50 relative overflow-hidden backdrop-blur-md">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Pricing Info */}
