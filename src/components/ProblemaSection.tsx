@@ -8,7 +8,7 @@ const audiences = [
   {
     icon: TrendingUp,
     description:
-      "Não é falta de esforço. É que tem algo te travando por dentro — e você sente isso.",
+      "Não é falta de esforço. É que tem algo te travando por dentro e você sente isso.",
   },
   {
     icon: Users,
