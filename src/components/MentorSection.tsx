@@ -40,7 +40,7 @@ export const MentorSection = () => {
   ];
 
   return (
-    <section className="py-10  bg-[#0a0a0a] relative overflow-hidden">
+    <section className="py-4  bg-[#0a0a0a] relative overflow-hidden">
       
       {/* Grid background pattern */}
       <div
@@ -55,8 +55,8 @@ export const MentorSection = () => {
       />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20 ">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+        <div className="text-center max-w-3xl mx-auto mb-10 ">
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white">
             Conheça os <span className="text-primary">Mentores</span>
           </h2>
           <p className="text-lg text-gray-400">
@@ -64,7 +64,7 @@ export const MentorSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col md:gap-16">
           {mentors.map((mentor, index) => (
             <div
               key={index}
@@ -96,7 +96,7 @@ export const MentorSection = () => {
                   relative z-10 flex flex-col
                   md:flex-row md:justify-end
                   gap-6
-                  mt-6 md:mt-20 lg:px-12 py-10 md:py-16
+                  mt-6 md:mt-20 lg:px-12 py-3 md:py-16
                 "
               >
                 {/* CARD */}
