@@ -6,7 +6,7 @@ export const ChoiceSection = () => {
     <section className="py-2 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
         {/* Título */}
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground leading-snug">
             Escolha agora!
           </h2>
@@ -44,7 +44,7 @@ export const ChoiceSection = () => {
             </div>
 
             {/* Texto */}
-            <div className="mt-8 text-center">
+            <div className="mt-3 text-center">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed font-semibold text-foreground">
                 Ativar de vez a sua verdadeira identidade e propósito em Lisboa.
               </p>
@@ -58,7 +58,7 @@ export const ChoiceSection = () => {
           <Button
             variant="hero"
             size="lg"
-            className="w-full sm:w-auto text-sm sm:text-lg px-10 sm:px-12 py-5 sm:py-6 h-auto animate-glow"
+            className="w-full sm:w-auto text-sm sm:text-lg mb-10 px-10 sm:px-12 py-5 sm:py-6 h-auto animate-glow"
           >
             QUERO ENTRAR NO MÉTODO IP
           </Button>
