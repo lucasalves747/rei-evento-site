@@ -61,12 +61,12 @@ export const HeroSection = () => {
                 </div>
                 <div className="flex items-center gap-2 text-primary">
                   <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>06 e 07 Dezembro</span>
+                  <span>28/02 e 01/03</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                   <a
-                    href="https://www.google.com.br/maps/place/Crowne+Plaza+Hollywood+Beach/@25.9874362,-80.1200348,17z/"
+                    href="https://maps.app.goo.gl/DJLBNr1MoMQxFPxp7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -101,7 +101,7 @@ export const HeroSection = () => {
                 </p>
 
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  DOUBLETREE RESORT BY HILTON • 4000 S OCEAN DR. HOLLYWOOD, FL 33019
+                  Fort Lauderdale
                 </p>
 
                 {/* Botão CTA */}
