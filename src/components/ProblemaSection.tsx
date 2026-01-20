@@ -94,7 +94,7 @@ export const ProblemaSection = () => {
             </h2>
 
             <div className="flex justify-center">
-              <a href="https://link.salee.ai/widget/survey/el7zf7YLfRcmP8NN2SM2">
+              <a href="https://link.salee.ai/widget/survey/uOOVbPHB84uXTbUqyeUE">
               <Button
                 variant="hero"
                 size="lg"

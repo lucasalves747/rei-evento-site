@@ -48,7 +48,7 @@ export const PricingSection = () => {
                 <div className="pt-4 border-t border-border" />
 
                 <div className="flex justify-center lg:justify-start">
-                  <a href="https://link.salee.ai/widget/survey/el7zf7YLfRcmP8NN2SM2">
+                  <a href="https://link.salee.ai/widget/survey/uOOVbPHB84uXTbUqyeUE">
                   <Button
                     variant="hero"
                     size="lg"

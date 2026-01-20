@@ -54,7 +54,7 @@ export const ChoiceSection = () => {
 
         {/* Botão */}
         <div className="text-center">
-          <a href="https://link.salee.ai/widget/survey/el7zf7YLfRcmP8NN2SM2">
+          <a href="https://link.salee.ai/widget/survey/uOOVbPHB84uXTbUqyeUE">
           <Button
             variant="hero"
             size="lg"
